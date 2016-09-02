@@ -8,7 +8,7 @@ $(function() {
     ];
 
     var seedFromString = function(seed, test_name, options) {
-        word = CryptoJS.MD5("" + seed + test_name).words[0];
+        var word = CryptoJS.MD5("" + seed + test_name).words[0];
         i = Math.abs(word);
         return i;
     }
