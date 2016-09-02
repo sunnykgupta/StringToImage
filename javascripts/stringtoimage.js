@@ -8,7 +8,7 @@ $(function() {
     ];
 
     var seedFromString = function(seed, test_name, options) {
-        word = md5("" + seed + test_name).words[0];
+        word = md5("" + seed + test_name)[0];
         i = Math.abs(word);
         return i;
     }
